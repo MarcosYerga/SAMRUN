@@ -1,0 +1,11 @@
+README.txt
+setup.py
+samrum.egg-info/PKG-INFO
+samrum.egg-info/SOURCES.txt
+samrum.egg-info/dependency_links.txt
+samrum.egg-info/entry_points.txt
+samrum.egg-info/requires.txt
+samrum.egg-info/top_level.txt
+samrun/__init__.py
+samrun/__main__.py
+samrun/game.py

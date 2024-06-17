@@ -1,0 +1,2 @@
+[console_scripts]
+samrun = samrun.__main__:main

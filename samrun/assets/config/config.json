@@ -1,0 +1,135 @@
+{
+    "game" : {
+        "screen_size":[1280,400],
+        "name": "Samurai run!!!",
+        "fondo":[0,0,0],
+        "foreground":[255,255,255]
+    },
+    "timing":{
+        "fps":60,
+        "refresh_time":1000,
+        "stats_pos":[0,10]
+    },
+    "font":{
+        "name":"go3v2",
+        "font_file":["samrun.assets.fonts","go3v2.ttf"],
+        "size": 24
+    },
+    "input":{
+        "key_maping":{
+            "up":"w",
+            "down":"s",
+            "attack1":"a",
+            "attack2":"d",
+            "shield":"e"
+        }
+    },
+    "music":{
+        "volume":0.2,
+        "fadeout":200,
+        "mission":{
+            "name":"mission",
+            "file":["samrun.assets.music", "mission.ogg"]
+        }
+    },
+    "sfx" : {
+        "volume" : 1.0,
+        "jump" : {
+            "name" : "Jump_sound",
+            "file" : ["samrun.assets.sfx", "jump.wav"]
+        },
+        "attack" : {
+            "name" : "Attack_sound",
+            "file" : ["samrun.assets.sfx", "attack.wav"]
+        },
+        "defence" : {
+            "name" : "Defence_sound",
+            "file" : ["samrun.assets.sfx", "defence.wav"]
+        },
+        "hit" : {
+            "name" : "Hit_sound",
+            "file" : ["samrun.assets.sfx", "hit.wav"]
+        },
+        "archer":{
+            "name":"Archer_sound",
+            "file":["samrun.assets.sfx", "archer.wav"]
+        },
+        "pain":{
+            "name":"pain_sound",
+            "file":["samrun.assets.sfx", "pain.wav"]
+        }
+    },
+    "backgrounds":{
+        "forest":{
+            "name":"forest",
+            "image_file":["samrun.assets.images.parallax","Forest.png"],
+            "speed":0.1
+        }
+    },
+    "floor":{
+        "name":"floor",
+        "image_file":["samrun.assets.images.obstacules","Floor.png"]
+    },
+    "entities": {
+        "hero": {
+            "name": "hero",
+            "speed": 0.5,
+            "run": ["samrun.assets.images.samurai","Run.png"],
+            "run_col": 8,
+            "jump": ["samrun.assets.images.samurai","Jump.png"],
+            "jump_col": 12,
+            "attack1":["samrun.assets.images.samurai","Attack_1.png"],
+            "attack1_col": 6,
+            "attack2": ["samrun.assets.images.samurai","Attack_3.png"],
+            "attack2_col": 3,
+            "shield":["samrun.assets.images.samurai","Shield.png"],
+            "shield_col": 2,
+            "dead":["samrun.assets.images.samurai","Dead.png"],
+            "dead_col": 3,
+            "cooldown_attack1":2000,
+            "cooldown_attack2":2000,
+            "cooldown_defence":3000
+            }
+        ,
+        "enemies":{
+            "speed":0.1,
+            "archer":{
+                "name":"archer",
+                "name2":"archer_shot",
+                "name3":"archer_dead",
+                "attack":{
+                    "image_file":["samrun.assets.images.enemies.archer","Shot.png"],
+                    "columns": 14},
+                "idle":{
+                    "image_file":["samrun.assets.images.enemies.archer","Idle.png"],
+                    "columns": 9},
+                "dead":{
+                    "image_file":["samrun.assets.images.enemies.archer","Dead.png"],
+                    "columns": 5},
+                "cool_down":6000
+            },
+            "mele":{
+                "name":"mele",
+                "name2":"mele_attack",
+                "name3":"mele_dead",
+                "attack":{
+                    "image_file":["samrun.assets.images.enemies.mele","Attack_2.png"],
+                    "columns": 5},
+                "run":{
+                    "image_file":["samrun.assets.images.enemies.mele","Run.png"],
+                    "columns": 8},
+                "dead":{
+                    "image_file":["samrun.assets.images.enemies.mele","Dead.png"],
+                    "columns": 6}
+            }
+        },
+        "arrow":{
+            "name":"arrow",
+            "image_file":["samrun.assets.images.enemies.archer","Arrow.png"],
+            "velocity":0.6
+        }
+    }
+}
+
+
+ 
